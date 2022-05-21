@@ -9,7 +9,7 @@ namespace WebStore
 
             var app = builder.Build();
 
-            app.MapGet("/", () => app.Configuration["ServerGreetings"]);
+            app.MapGet("/greetings", () => app.Configuration["ServerGreetings"]);
 
             //app.MapDefaultControllerRoute();
             app.MapControllerRoute(
